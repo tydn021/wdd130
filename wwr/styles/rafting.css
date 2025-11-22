@@ -138,6 +138,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.adventure img {
+    width: 10%;
+    height: auto;
 }
 
 h1 {
