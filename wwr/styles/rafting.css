@@ -23,7 +23,16 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color)
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    flex: 1 1 auto;
 }
 
 header, main, footer {
@@ -38,25 +47,57 @@ h1, h2 {
 }
 
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+    margin: 1rem;
+    padding: .5rem;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 4rem;
+    height: 4rem;
+}
+
 .hero {
     position: relative;
 }
 
-.hero article {
+.hero h1 {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    border-radius: 10rem;
+    font-size: 3rem;
+    text-align: center;
+
 }
 
+
+.hero article {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: var(--accent2-color);
+    border-color: var(--secondary-color)
+}
 .hero img {
     display: block;
     width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    display: block;
+    width: 125px;
     height: auto;
 }
 
@@ -71,9 +112,3 @@ h1 {
     color: #fff
 }
 
-.hero article img {
-    float: right;
-    display: block;
-    width: 100%;
-    height: auto;
-}
