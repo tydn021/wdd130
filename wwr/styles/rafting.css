@@ -97,7 +97,11 @@ nav, p, section, article {
 .hero article img {
     float: right;
     display: block;
+<<<<<<< HEAD
     width: 125px;
+=======
+    width: 100%;
+>>>>>>> cbc5def2a340fe93ea691ba0c31de368e1988f13
     height: auto;
 }
 
