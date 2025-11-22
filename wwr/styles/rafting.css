@@ -25,14 +25,21 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 100px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: space-around;
+    padding: left;
+    margin: 0px;
 }
 
-nav {
+header nav {
     display: flex;
     list-style: none;
-    flex: 1 1 auto;
+    flex: end;
+}
+
+header nav a {
+    padding: 15px;
 }
 
 header, main, footer {
@@ -51,11 +58,21 @@ nav, p, section, article {
     padding: .5rem;
 }
 
+footer {
+    display: flex;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
+    align-items: flex-end;
     width: 4rem;
     height: 4rem;
 }
@@ -66,7 +83,7 @@ nav, p, section, article {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--secondary-color);
@@ -80,13 +97,15 @@ nav, p, section, article {
 
 
 .hero article {
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 1rem;
+    top: 23rem;
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
     background-color: var(--accent2-color);
-    border-color: var(--secondary-color)
+    border-color: var(--secondary-color);
 }
 .hero img {
     display: block;
@@ -97,16 +116,28 @@ nav, p, section, article {
 .hero article img {
     float: right;
     display: block;
-<<<<<<< HEAD
-    width: 100%;
-=======
-<<<<<<< HEAD
-    width: 125px;
-=======
-    width: 100%;
->>>>>>> cbc5def2a340fe93ea691ba0c31de368e1988f13
->>>>>>> 8f5a2f9d20c188d78bfda793707867ecb82837f1
+    width: 25%;
     height: auto;
+    align-items: center;
+}
+
+.historytitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adventure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
