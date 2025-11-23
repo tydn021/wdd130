@@ -2,9 +2,10 @@
 :root {
     --primary-color: rgb(25, 82, 126);
     --secondary-color: rgb(245, 148, 29);
-    --accent1-color: rgb(150, 82, 126);
+    --accent1-color: #773e63;
     --accent2-color: rgb(195, 231, 76);
-    --bkcolor-transparent: rgba(32, 12, 128, 0.422);
+    --bkcolor: #180b5b;
+    --bkcolor-transparent: rgba(32, 12, 128, 0.424);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -21,6 +22,11 @@ body {
     color: var(--accent1-color)
 
 }
+
+p {
+    color: var(--bkcolor);
+}
+
 img {
     width: 100%;
 }
@@ -36,11 +42,9 @@ header {
 header nav {
     display: flex;
     list-style: none;
-    flex: end;
 }
 
 header nav a {
-    padding: 15px;
     color: #f3f3f3;
     text-decoration: none;
     padding: 1em;
@@ -73,12 +77,17 @@ footer {
     color: #f3f3f3;
 }
 
+footer p {
+    color: var(--accent2-color);
+}
+
 .socialmedia {
     display: inline-block;
 }
 
 .socialmedia a {
     text-decoration: none;
+
 }
 
 .socialmedia img {
