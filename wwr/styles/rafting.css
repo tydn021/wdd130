@@ -289,3 +289,28 @@ figcaption {
     grid-column: 1 / -1;
     justify-self: center;
 }
+
+.newsletter {
+    width: 20em;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1em;
+}
+
+.newsletter p {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cta {
+    background-color: #f33;
+    color: #fefefe;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 3em auto;
+    display: block;
+    width: fit-content;
+}
