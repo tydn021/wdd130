@@ -137,7 +137,7 @@ tfoot tr {
     top: 25%;
     left: 50%;
     width: 10em;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: var(--bkcolor-transparent);
     color: var(--accent2-color);
     padding: 1rem;
