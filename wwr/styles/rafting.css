@@ -81,6 +81,27 @@ footer p {
     color: var(--accent2-color);
 }
 
+table {
+    display: grid;
+    grid-template-columns: max-content;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+th, td {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+thead tr, tfoot tr {
+    background-color: var(--bkcolor);
+    color: white;
+    font-weight: 700;
+
+}
 .socialmedia {
     display: inline-block;
 }
@@ -313,4 +334,25 @@ figcaption {
     margin: 3em auto;
     display: block;
     width: fit-content;
+}
+
+.hp-img {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1em;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1em;
+}
+
+.trips h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+.triptable {
+    display: grid;
+    height: 25vh;
 }
